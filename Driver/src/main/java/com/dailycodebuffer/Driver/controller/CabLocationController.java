@@ -31,3 +31,43 @@ public class CabLocationController {
         , HttpStatus.OK);
     }
 }
+/*@RestController:
+
+Purpose: Marks the class as a RESTful controller.
+Function: Indicates that the class is ready to handle HTTP requests.
+@RequestMapping("/location"):
+
+Purpose: Maps HTTP requests to specific handler methods.
+Function: Specifies that this controller handles requests sent to /location.
+CabLocationController:
+
+Purpose: The name of the controller class.
+Function: Manages cab location updates.
+@Autowired:
+
+Purpose: Automatically wires the CabLocationService bean into the controller.
+Function: Allows the controller to use the service's methods for operations.
+CabLocationService cabLocationService:
+
+Purpose: A dependency of the controller.
+Function: Presumably contains methods related to updating cab locations.
+@PutMapping:
+
+Purpose: Indicates that the updateLocation() method handles HTTP PUT requests.
+Function: Maps PUT requests to the method.
+Components of the Statement
+ResponseEntity<>:
+
+Purpose: Represents the entire HTTP response, including status code, headers, and body.
+Function: Used to control the HTTP response returned by the controller method.
+Map.of("message", "Location Updated"):
+
+Purpose: Creates an immutable map with a single key-value pair.
+Function: In this context, it creates a map with a key "message" and a value "Location Updated".
+Example: { "message": "Location Updated" }
+HttpStatus.OK:
+
+Purpose: Represents the HTTP status code.
+Function: Indicates that the request was successful.
+Value: HttpStatus.OK corresponds to the HTTP status code 200.
+*/
