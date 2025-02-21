@@ -52,4 +52,18 @@ updateLocation Method:
 Takes Location Data: The method takes the location data as input.
 Sends Data to Kafka: It uses the KafkaTemplate to send this data to a Kafka topic.
 Returns Success: It returns true to indicate that the data was successfully sent.
+
+Step-by-Step Explanation
+Method Call:
+
+When you call updateLocation("some location data"), you are passing a string (e.g., "some location data") to the method.
+Sending Data to Kafka:
+
+Inside the method, kafkaTemplate.send(AppConstant.CAB_LOCATION, location) is executed.
+This line sends the location data to a Kafka topic named AppConstant.CAB_LOCATION.
+Think of kafkaTemplate.send as a way to send a message. The message contains the location data and is sent to a specific topic in Kafka.
+Returning True:
+
+After sending the data, the method returns true.
+This indicates that the method has completed its task successfully.
 */
